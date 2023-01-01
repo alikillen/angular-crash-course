@@ -9,5 +9,5 @@ import { Component } from '@angular/core';
 // classes - put any properties of the component here, and any methods, custom and lifecycle methods (kinda like react class components)
 // lets define title as a string with TS
 export class AppComponent {
-  title: string = 'Task Tracker';
+  
 }
