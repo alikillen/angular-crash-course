@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
   title: string = 'Task Tracker';
@@ -13,11 +13,9 @@ export class HeaderComponent {
   constructor() {}
 
   // this is a lifecycle method - stuff here for when component initially loads
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   toggleAddTask() {
-    console.log("toggle")
+    console.log('toggle');
   }
 }
