@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
+import { TASKS } from '../mock-tasks';
+import { Task } from '../Task';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class TaskServiceService {
-
-  constructor() { }
+  getTasks(): Task[] {
+    return TASKS;
+  }
 }
