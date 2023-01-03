@@ -13,6 +13,7 @@ export class TasksComponent {
   constructor(private taskService: TaskServiceService) {}
 
   ngOnInit(): void {
-    this.tasks = this.taskService.getTasks();
+    // we are subscribing to the tasks observable from the service so we can watch it
+    this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks));
   }
 }
